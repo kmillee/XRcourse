@@ -41,7 +41,7 @@ public class LightControl : MonoBehaviour
 
     public void Switch_On()
     {
-        if (l != null) l.intensity = off_intensity;
+        if (l != null) l.intensity = on_intensity;
         this.on_state = true;
     }
 
