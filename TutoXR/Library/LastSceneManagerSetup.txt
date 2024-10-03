@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/TutoPhysics.unity
+- path: Assets/4.5.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

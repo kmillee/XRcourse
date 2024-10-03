@@ -1,19 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - DragChanger
-    - Gravitational
-    - Instanciate
+    - MovementProvider
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.Interaction.Toolkit.dll:
+    - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
     - UnityEngine.XR.Interaction.Toolkit.XRController
-    - UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
     - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
     - UnityEngine.XR.Interaction.Toolkit.XRRig
-    - UnityEngine.XR.Interaction.Toolkit.XRSimpleInteractable
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -27,6 +24,7 @@ ScriptsOnlyBuild:
     - Unity.XR.PXR.PXR_ControllerLoader
     - Unity.XR.PXR.PXR_FPS
     - Unity.XR.PXR.PXR_Loader
+    - Unity.XR.PXR.PXR_Manager
     - Unity.XR.PXR.PXR_PlatformSetting
     - Unity.XR.PXR.PXR_ProjectSetting
     - Unity.XR.PXR.PXR_Settings
@@ -42,7 +40,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/TutoPhysics.unity:
+    Assets/4.5.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -61,9 +59,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 65
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -94,42 +90,40 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2878}
     - Class: 114
+      Script: {instanceID: 2894}
+    - Class: 114
       Script: {instanceID: 2910}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3100}
     - Class: 114
-      Script: {instanceID: 3346}
+      Script: {instanceID: 3350}
     - Class: 114
-      Script: {instanceID: 3424}
+      Script: {instanceID: 3428}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 3904}
     - Class: 114
-      Script: {instanceID: 3636}
+      Script: {instanceID: 3920}
     - Class: 114
-      Script: {instanceID: 3898}
+      Script: {instanceID: 4216}
     - Class: 114
-      Script: {instanceID: 3914}
+      Script: {instanceID: 4390}
     - Class: 114
-      Script: {instanceID: 4464}
-    - Class: 114
-      Script: {instanceID: 16970}
-    - Class: 114
-      Script: {instanceID: 16972}
-    - Class: 114
-      Script: {instanceID: 16974}
+      Script: {instanceID: 4474}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 134
-      Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 193
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
@@ -460,6 +454,12 @@ ScriptsOnlyBuild:
     className: XRRayInteractor
   - hash:
       serializedVersion: 2
+      Hash: acb0b9b370b066f62ddf17b10217c99d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OffsetGrab
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -482,6 +482,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: e192937b68e4c944b69df1bf2cab1ab7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gravitational
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -676,6 +682,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 0426f9dc7cb7f0f9621c1b02e7d5718d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Instanciate
+  - hash:
+      serializedVersion: 2
       Hash: 8ced7bf596b76066bae3429026b9fa33
     assemblyName: Unity.XR.PicoXR.dll
     namespaceName: Unity.XR.PXR
@@ -784,6 +796,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 93eed9c89288510f285077fa4340f824
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragChanger
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -836,6 +854,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: dd2df12db09ffae6896da8612c270650
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MovementProvider
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -920,25 +944,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.PicoXR.dll
     namespaceName: Unity.XR.PXR
     className: PXR_UIDropZone
-  - hash:
-      serializedVersion: 2
-      Hash: e192937b68e4c944b69df1bf2cab1ab7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Gravitational
-  - hash:
-      serializedVersion: 2
-      Hash: 93eed9c89288510f285077fa4340f824
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DragChanger
-  - hash:
-      serializedVersion: 2
-      Hash: 0426f9dc7cb7f0f9621c1b02e7d5718d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Instanciate
   platform: 13
   scenePathNames:
-  - Assets/TutoPhysics.unity
-  playerPath: C:/Users/ordinateur/OneDrive/IGD/HCI-902a XR/Git/XRcourse/physics.apk
+  - Assets/4.5.unity
+  playerPath: C:/Users/ordinateur/OneDrive/IGD/HCI-902a XR/Git/XRcourse/tp4-5.apk

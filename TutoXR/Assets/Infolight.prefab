@@ -333,6 +333,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btn_light: {fileID: 2216812357295861861}
   btn_bulb: {fileID: 2216812357740867233}
-  btn_color: {r: 0.22319168, g: 0.6320754, b: 0.21764861, a: 0}
+  btn_color: {r: 0.14799558, g: 0.089044146, b: 0.2735849, a: 1}
   off_intensity: 0
   on_intensity: 50
